@@ -1,4 +1,4 @@
-# Hi, I'm Halimat H. Fakorede
+# Hi, I'm Halimat Fakorede
 
 I studied agriculture, then learnt to work with data. Now I use both.
 
@@ -31,7 +31,7 @@ I then tested whether more fertilizer would fix it, using records from 221 count
 
 Maize was the one crop that improved, which proves it can be done here.
 
-**[Code](#)** · **[Live dashboard](#)** · `Python` `pandas` `statsmodels` `Streamlit`
+**[Code](https://github.com/HalimatFakorede/nigeria-yield-gap)** · **[Live dashboard](https://nigeria-yield-gap.streamlit.app)** · `Python` `pandas` `statsmodels` `Streamlit`
 
 ### Nigeria Food Price Early Warning System
 > Which staple foods are about to get expensive?
@@ -44,7 +44,8 @@ I rebuilt it to learn from the past only, then worked out the naira to dollar ra
 
 Months the system flags as high risk are followed by a sharp price rise half the time, against 29% of months normally.
 
-**[Code](#)** · **[Live dashboard](#)** · `Python` `GARCH` `scikit-learn` `Streamlit`
+**[Code](https://github.com/HalimatFakorede/nigeria-food-price-early-warning)** · **[Live dashboard](https://nigeria-food-price-early-warning.streamlit.app
+)** · `Python` `GARCH` `scikit-learn` `Streamlit`
 
 ### Food Import Risk Dashboard
 > If food imports fall, which countries run short first?

@@ -1,4 +1,4 @@
-# Hi, I'm Halimat Fakorede
+[# Hi, I'm Halimat Fakorede
 
 I studied agriculture, then learnt to work with data. Now I use both.
 
@@ -74,3 +74,4 @@ DataCamp Data Scientist Certification (2026). Applied Data Science Lab, WorldQua
 ---
 
 fakoredehalimat1@gmail.com · [LinkedIn](https://linkedin.com/in/halimatfakorede)
+](https://github.com/HalimatFakorede/HalimatFakorede/blob/main/README.md)

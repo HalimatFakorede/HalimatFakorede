@@ -1,10 +1,8 @@
-[# Hi, I'm Halimat Fakorede
+# Halimat H. Fakorede
 
-I studied agriculture, then learnt to work with data. Now I use both.
+Data analysis and business operations. Lagos, Nigeria.
 
-Most of what I build is about food. Why Nigerian farms grow less than they should. Why food prices jump the way they do. Who runs short when imports stop.
-
-**Looking for:** data analyst and data science roles in agriculture, food security or development. Based in Lagos, Nigeria.
+**Portfolio: [halimatfakorede.github.io](https://halimatfakorede.github.io)**
 
 ---
 
@@ -20,58 +18,81 @@ Most of what I build is about food. Why Nigerian farms grow less than they shoul
 
 ---
 
-## Projects
+## Analysis
+
+Everything here runs on data anyone can download, so my numbers can be checked.
 
 ### Nigeria Yield Gap Explorer
-> Are we growing more food because farming got better, or because farmers cleared more land?
 
-I studied 33 years of data on eight Nigerian food crops. Nearly all the growth came from clearing more land. Output per hectare fell.
+> Is Nigeria growing more food because farming got better, or because farmers cleared more land?
 
-I then tested whether more fertilizer would fix it, using records from 221 countries. The gain is smaller in countries that use very little of it, like Nigeria. Fertilizer on its own is not the answer.
+128% of the growth came from clearing more land. The amount harvested from each hectare actually fell. Food grown per person peaked in 2006 and is 10.5% lower now.
 
-Maize was the one crop that improved, which proves it can be done here.
+I worked it out two separate ways, using two different methods, to be sure they agreed. They did. I then tested whether more fertilizer would fix it, using farming records from 221 countries. It helps less than you would expect in countries that currently use very little, which is exactly where Nigeria sits.
 
-**[Code](https://github.com/HalimatFakorede/nigeria-yield-gap)** · **[Live dashboard](https://nigeria-yield-gap.streamlit.app)** · `Python` `pandas` `statsmodels` `Streamlit`
+Maize was the one crop that improved through better farming, so it can be done here.
 
-### Nigeria Food Price Early Warning System
-> Which staple foods are about to get expensive?
+**[Code](https://github.com/HalimatFakorede/nigeria-yield-gap)** · **[Live dashboard](https://nigeria-yield-gap.streamlit.app)** · `Python` `pandas` `statsmodels` `scikit-learn` `Streamlit`
 
-A monthly risk score for nine foods across 68 markets in 14 states, built from 88,545 price records.
+### Price Early Warning System
 
-The first version scored barely better than chance. Rather than adjust it until it looked right, I tested each part separately and found that Nigerian food prices usually fall back after a rise, so one measure was pointing the wrong way.
+> Which everyday foods are most likely to jump in price over the next few months?
 
-I rebuilt it to learn from the past only, then worked out the naira to dollar rate from the price records themselves. It predicts food price jumps better than any price measure in the model.
+A monthly score across 68 markets in 14 states, built from 88,545 price records.
 
-Months the system flags as high risk are followed by a sharp price rise half the time, against 29% of months normally.
+My first version did not work. Instead of adjusting it until the result looked good, I tested each part on its own and found one part was pointing the wrong way. Nigerian food prices usually settle back down after a rise, and I had not allowed for that. I rebuilt it so it only ever learns from what already happened, never from anything it could not have known at the time.
 
-**[Code](https://github.com/HalimatFakorede/nigeria-food-price-early-warning)** · **[Live dashboard](https://nigeria-food-price-early-warning.streamlit.app
-)** · `Python` `GARCH` `scikit-learn` `Streamlit`
+The strongest warning sign turned out to be the naira to dollar rate, which I worked out from the price records themselves.
 
-### Food Import Risk Dashboard
-> If food imports fall, which countries run short first?
+50% of the foods it flags do go on to jump sharply in price. Normally only 29% of months end that way.
 
-Set an import shock between 10% and 50% and see the shortfall, country by country and crop by crop. Built on FAOSTAT trade and production data.
+**[Code](https://github.com/HalimatFakorede/nigeria-food-price-early-warning)** · **[Live dashboard](https://nigeria-food-price-early-warning.streamlit.app)** · `Python` `scikit-learn` `GARCH` `Streamlit`
 
-**[Code](https://github.com/HalimatFakorede/food-import-risk-dashboard)** · `Python` `Streamlit` `FAOSTAT`
+### Import Disruption Risk
 
-### Volatility Risk System
-> Is this market calm or stressed right now?
+> If food imports were cut off, which countries would run short first?
 
-Measures how sharply prices are moving using GARCH, labels the market two different ways, and raises an alert when conditions change. Served through a REST API and a dashboard.
+Move a slider from a 10% cut to a 50% cut and the shortfall recalculates, country by country and crop by crop. A 35% drop would leave Japan short of 5.3 million tonnes of maize.
 
-**[Code](https://github.com/HalimatFakorede/volatility-risk-system)** · `Python` `GARCH` `FastAPI` `Streamlit`
+The score combines how much a country leans on imports with how unsteady both those imports and its own harvests are. I chose how much each of those counts rather than calculating it, and the page says so instead of presenting it as something measured.
+
+**[Code](https://github.com/HalimatFakorede/food-import-risk-dashboard)** · **[Live dashboard](https://food-import-risk-dashboard.streamlit.app)** · `Python` `Altair` `Parquet` `Streamlit`
+
+### Market Volatility Risk
+
+> Is this market calm or shaky right now, and has that just changed?
+
+It watches how sharply prices are moving, sets the market at low, medium or high risk, and raises an alert the moment that changes. Two separate methods judge the market and both are shown side by side, because when two reasonable methods disagree that is worth knowing about.
+
+It can also be plugged into other software, so another system can check the risk level without a person having to sit and watch a screen.
+
+**[Code](https://github.com/HalimatFakorede/volatility-risk-system)** · **[Live dashboard](https://volatility-risk-system.streamlit.app)** · `Python` `FastAPI` `GARCH` `HMM` `Streamlit`
+
+---
+
+## Operations
+
+The other half of what I do, and it does not live on GitHub.
+
+Supporting two businesses at once inside one group, coordinating suppliers across both. Keeping an online food market's product information accurate. Tracing where students were dropping off before finishing a sign up. Coordinating remote contributors and holding deadlines for a UK organization.
+
+I also build and maintain two live WordPress sites: [opulentceramics.com](https://opulentceramics.com), a store with four wholesale price levels and a reseller route, and [funmilolabellonaire.com](https://funmilolabellonaire.com), a personal brand platform carrying a podcast, a book, events and a newsletter.
+
+Two academies have brought me in to teach this work, Cirvee Academy and Next Switch Academy.
+
+**[See the operations work &rarr;](https://halimatfakorede.github.io/#operations)**
 
 ---
 
 ## Background
 
-Bachelor of Agriculture, University of Ilorin.
+Bachelor of Agriculture, Second Class Upper, University of Ilorin, 2022.
 
-Four years running reporting and operations for companies in Nigeria and the UK.
-
-DataCamp Data Scientist Certification (2026). Applied Data Science Lab, WorldQuant University (2025).
+Data Scientist Certification, DataCamp, 2026.
+Applied Data Science Lab, WorldQuant University, 2025.
+Deep Learning Fundamentals Lab, WorldQuant University, in progress.
+Virtual Assistant Course, ALX, 2022.
 
 ---
 
-fakoredehalimat1@gmail.com · [LinkedIn](https://linkedin.com/in/halimatfakorede)
-](https://github.com/HalimatFakorede/HalimatFakorede/blob/main/README.md)
+[fakoredehalimat1@gmail.com](mailto:fakoredehalimat1@gmail.com) · [LinkedIn](https://linkedin.com/in/halimatfakorede) · [Portfolio](https://halimatfakorede.github.io)
